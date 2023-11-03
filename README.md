@@ -139,7 +139,27 @@ Username => userpanel
 Password =>  Contact me  Telegram @suphi007
 ``` 
 # Screenshots
-Coming soon
+## Index
+![image](https://github.com/suphiyasin/Instagram-Automation-Tools/assets/65618247/83ff4e0b-2d90-4c98-bf26-cf1f96b5ae2d)
+
+## Collect From Location
+![image](https://github.com/suphiyasin/Instagram-Automation-Tools/assets/65618247/33858e02-2c24-4c92-89ce-3f95a2e876c0)
+
+## Collect With AI
+![image](https://github.com/suphiyasin/Instagram-Automation-Tools/assets/65618247/4a3ca197-95f3-4d90-91d8-6a90836336b6)
+
+## Mail sender
+![image](https://github.com/suphiyasin/Instagram-Automation-Tools/assets/65618247/08ad589a-232c-4af4-9e5f-1d805ef6de84)
+
+## WP Sender 
+![image](https://github.com/suphiyasin/Instagram-Automation-Tools/assets/65618247/7742cbea-c855-4e85-a5a3-4f6f46fd9044)
+
+## DM Sender
+![image](https://github.com/suphiyasin/Instagram-Automation-Tools/assets/65618247/4d10327c-b490-4624-8785-1f3932dd43a1)
+
+## Messenger Sender
+![image](https://github.com/suphiyasin/Instagram-Automation-Tools/assets/65618247/ad487f7b-a8af-476d-bd8c-42000e005639)
+
 
 [contributors-shield]: https://img.shields.io/github/contributors/suphiyasin/instagram-advanced-user-finder.svg?style=for-the-badge
 [contributors-url]: https://github.com/suphiyasin/instagram-advanced-user-finder/graphs/contributors
