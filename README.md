@@ -161,11 +161,11 @@ Password =>  Contact me  Telegram @suphi007
 ![image](https://github.com/suphiyasin/Instagram-Automation-Tools/assets/65618247/ad487f7b-a8af-476d-bd8c-42000e005639)
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/suphiyasin/instagram-advanced-user-finder.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/suphiyasin/Instagram-Automation-Tools.svg?style=for-the-badge
 [contributors-url]: https://github.com/suphiyasin/Instagram-Automation-Tools/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/suphiyasin/instagram-advanced-user-finder.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/suphiyasin/Instagram-Automation-Tools.svg?style=for-the-badge
 [forks-url]: https://github.com/suphiyasin/Instagram-Automation-Tools/network/members
-[stars-shield]: https://img.shields.io/github/stars/suphiyasin/instagram-advanced-user-finder.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/suphiyasin/Instagram-Automation-Tools.svg?style=for-the-badge
 [stars-url]: https://github.com/suphiyasin/Instagram-Automation-Tools/stargazers
-[issues-shield]: https://img.shields.io/github/issues/suphiyasin/instagram-advanced-user-finder.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/suphiyasin/Instagram-Automation-Tools.svg?style=for-the-badge
 [issues-url]: https://github.com/suphiyasin/Instagram-Automation-Tools/issues
