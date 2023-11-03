@@ -24,10 +24,10 @@
 
 
 # Get Key
-every week, you can get free weekly key from telegram. We share it from <a href="#weekly-key-area">Pricing</a><br/>
-Daily => 4.90$
-Weekly => 14.90$
-Monthly => 29.90$
+Pricing<br/>
+Daily => 4.90$<br/>
+Weekly => 14.90$<br/>
+Monthly => 29.90$<br/>
 To obtain a monthly license, please contact <a href="https://t.me/suphi007">@suphi007</a>.
 <br>
 
