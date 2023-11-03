@@ -2,12 +2,12 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/suphiyasin/instagram-advanced-user-finder&count_bg=%23C83D3D&title_bg=%23057386&icon=&icon_color=%23BA0808&title=View&edge_flat=false)](https://github.com/suphiyasin/instagram-advanced-user-finder)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/suphiyasin/Instagram-Automation-Tools&count_bg=%23C83D3D&title_bg=%23057386&icon=&icon_color=%23BA0808&title=View&edge_flat=false)](https://github.com/suphiyasin/Instagram-Automation-Tools)
 
 
 <br />
 <p align="center">
-<a href="https://github.com/suphiyasin/instagram-advanced-user-finder/">
+<a href="https://github.com/suphiyasin/Instagram-Automation-Tools/">
 <img src="https://cdn.cdnlogo.com/logos/i/4/instagram.svg" alt="Logo" width="80" height="80" />
 </a>
 
@@ -16,9 +16,9 @@
 <p align="center">
     With this React & Nodejs app, you can find users on Instagram and message them.
     <br>
-    <a href="https://github.com/suphiyasin/instagram-advanced-user-finder/issues">Feedback</a>
+    <a href="https://github.com/suphiyasin/Instagram-Automation-Tools/issues">Feedback</a>
     <br>
-    <a href="https://github.com/suphiyasin/instagram-advanced-user-finder/blob/main/README-TR.md" style="font-size:24px">Türkçe</a>
+    <a href="https://suphi.org/docs.html" style="font-size:24px">Türkçe</a>
 </p>
 
 
@@ -44,7 +44,7 @@ You can gather tens of thousands of users from one user with the features you ar
 
 ## Using the repo by downloading
 
-1. <a href="https://github.com/suphiyasin/instagram-advanced-user-finder/archive/refs/heads/main.zip">This</a> download script
+1. <a href="https://github.com/suphiyasin/Instagram-Automation-Tools/archive/refs/heads/main.zip">This</a> download script
 2. Create "rich" name database.
 3. And import the "rich.sql" or
 4. sql query
@@ -162,10 +162,10 @@ Password =>  Contact me  Telegram @suphi007
 
 
 [contributors-shield]: https://img.shields.io/github/contributors/suphiyasin/instagram-advanced-user-finder.svg?style=for-the-badge
-[contributors-url]: https://github.com/suphiyasin/instagram-advanced-user-finder/graphs/contributors
+[contributors-url]: https://github.com/suphiyasin/Instagram-Automation-Tools/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/suphiyasin/instagram-advanced-user-finder.svg?style=for-the-badge
-[forks-url]: https://github.com/hasokeyk/instagram/network/members
+[forks-url]: https://github.com/suphiyasin/Instagram-Automation-Tools/network/members
 [stars-shield]: https://img.shields.io/github/stars/suphiyasin/instagram-advanced-user-finder.svg?style=for-the-badge
-[stars-url]: https://github.com/suphiyasin/instagram-advanced-user-finder/stargazers
+[stars-url]: https://github.com/suphiyasin/Instagram-Automation-Tools/stargazers
 [issues-shield]: https://img.shields.io/github/issues/suphiyasin/instagram-advanced-user-finder.svg?style=for-the-badge
-[issues-url]: https://github.com/suphiyasin/instagram-advanced-user-finder/issues
+[issues-url]: https://github.com/suphiyasin/Instagram-Automation-Tools/issues
