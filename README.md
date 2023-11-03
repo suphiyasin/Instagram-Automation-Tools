@@ -25,7 +25,7 @@
 
 # Get Key
 Pricing<br/>
-Trial => 1 Day - 3 Day For FREE
+Trial => 1 Day - 3 Day For FREE <br/>
 Daily => 4.90$<br/>
 Weekly => 14.90$<br/>
 Monthly => 29.90$<br/>
