@@ -101,11 +101,11 @@ CREATE TABLE `webmail` (
 ### 1- Data collecting
 
 #### a. User Aggregation
-Firstly, in the "account gathering" section,
-1-) Gathering from Suggestions: Here, you enter a username, and all accounts that resemble it are collected, and their emails and phone numbers are checked.
-2-) Gathering from Location: You enter the ID of a location, and it collects accounts that have made posts in that location, scanning them.
-3-) General Gathering: A gathering process is initiated with the support of artificial intelligence (ChatGPT Turbo 3.5 Supported)...
-4-) Gathering from Hashtags: A service that is currently under maintenance.
+Firstly, in the "account gathering" section, <br/>
+1-) Gathering from Suggestions: Here, you enter a username, and all accounts that resemble it are collected, and their emails and phone numbers are checked.<br/>
+2-) Gathering from Location: You enter the ID of a location, and it collects accounts that have made posts in that location, scanning them.<br/>
+3-) General Gathering: A gathering process is initiated with the support of artificial intelligence (ChatGPT Turbo 3.5 Supported)...<br/>
+4-) Gathering from Hashtags: A service that is currently under maintenance.<br/>
 
 ### Send Message
 
@@ -116,15 +116,15 @@ SMTP Settings
 
 Sending process
 
-3. Click the "mail sender" menu under the "Sender" menu.
+3. Click the "mail sender" menu under the "Sender" menu.<br/>
 4. After making the mail, press the "Start" button and wait.
 
 #### a. Send an Instagram DM
 
-1. Click on the "dm sender" menu under the "Sender" menu.
-2. Type the message to be sent in the "Draft" section of the screen that appears.
-3. In the "Enter Your Accounts" section, enter your Instagram user and password that you will message, with : (colon above) between them.
-4. After performing all the operations, press the "Start" button and wait.
+1. Click on the "dm sender" menu under the "Sender" menu.<br/>
+2. Type the message to be sent in the "Draft" section of the screen that appears.<br/>
+3. In the "Enter Your Accounts" section, enter your Instagram user and password that you will message, with : (colon above) between them.<br/>
+4. After performing all the operations, press the "Start" button and wait.<br/>
 
 #### a. Sending a message with Whatsapp
 
