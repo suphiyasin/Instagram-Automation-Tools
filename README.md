@@ -14,6 +14,7 @@
 <h3 align="center">Instagram Advanced User Finder V2.0.0</h3>
 
 <p align="center">
+    Coming 06.11.2023 - 08.11.2023 <br/>
     With this React & Nodejs app, you can find users on Instagram and message them.
     <br>
     <a href="https://github.com/suphiyasin/Instagram-Automation-Tools/issues">Feedback</a>
