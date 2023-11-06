@@ -1,0 +1,952 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <title>OTO - Documentation</title>
+    <meta name="description" content="">
+    <meta name="author" content="suphi">
+    <meta charset="UTF-8">
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+                @charset "utf-8";
+
+                .hljs {
+                    display: block;
+                    overflow-x: auto;
+                    padding: 0.5em;
+                    background: #323F4C;
+                }
+
+                .hljs {
+                    color: #fff;
+                }
+
+                .hljs-strong, .hljs-emphasis {
+                    color: #a8a8a2
+                }
+
+                .hljs-bullet, .hljs-quote, .hljs-link, .hljs-number, .hljs-regexp, .hljs-literal {
+                    color: #6896ba
+                }
+
+                .hljs-code, .hljs-selector-class {
+                    color: #a6e22e
+                }
+
+                .hljs-emphasis {
+                    font-style: italic
+                }
+
+                .hljs-keyword, .hljs-selector-tag, .hljs-section, .hljs-attribute, .hljs-name, .hljs-variable {
+                    color: #cb7832
+                }
+
+                .hljs-params {
+                    color: #b9b9b9
+                }
+
+                .hljs-string {
+                    color: #6a8759
+                }
+
+                .hljs-subst, .hljs-type, .hljs-built_in, .hljs-builtin-name, .hljs-symbol, .hljs-selector-id, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-template-tag, .hljs-template-variable, .hljs-addition {
+                    color: #e0c46c
+                }
+
+                .hljs-comment, .hljs-deletion, .hljs-meta {
+                    color: #7f7f7f
+                }
+
+                html, body, div, span, applet, object, iframe,
+                h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+                a, abbr, acronym, address, big, cite, code,
+                del, dfn, em, ins, kbd, q, s, samp,
+                small, strike, strong, sub, sup, tt, var,
+                b, u, i, center,
+                dl, dt, dd, ol, ul, li,
+                fieldset, form, label, legend,
+                table, caption, tbody, tfoot, thead, tr, th, td,
+                article, aside, canvas, details, embed,
+                figure, figcaption, footer, hgroup,
+                menu, nav, output, ruby, section, summary,
+                time, mark, audio, video {
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                    font-size: 100%;
+                    font: inherit;
+                    vertical-align: baseline;
+                }
+
+                article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+                    display: block;
+                }
+
+                img, embed, object, video {
+                    max-width: 100%;
+                }
+
+                .ie6 img.full, .ie6 object.full, .ie6 embed, .ie6 video {
+                    width: 100%;
+                }
+
+                /* BASE
+        ----------------------------------------------------------------------------------------*/
+
+                * {
+                    -webkit-transition: all 0.3s ease;
+                    -moz-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                    -ms-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                }
+
+                html,
+                body {
+                    position: relative;
+                    min-height: 100%;
+                    height: 100%;
+                    -webkit-backface-visibility: hidden;
+                    font-family: 'Roboto', sans-serif;
+                }
+
+                strong {
+                    font-weight: 500;
+                }
+
+                i {
+                    font-style: italic;
+                }
+
+                .overflow-hidden {
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                .content a {
+                    color: #00a8e3;
+                    text-decoration: none;
+                }
+
+                    .content a:hover {
+                        text-decoration: underline;
+                    }
+
+                .scroll-to-link {
+                    cursor: pointer;
+                }
+
+                p, .content ul, .content ol {
+                    font-size: 14px;
+                    color: #777A7A;
+                    margin-bottom: 16px;
+                    line-height: 1.6;
+                    font-weight: 300;
+                }
+
+                .content h1:first-child {
+                    font-size: 1.333em;
+                    color: #034c8f;
+                    padding-top: 2.5em;
+                    text-transform: uppercase;
+                    border-top: 1px solid rgba(255,255,255,0.3);
+                    border-top-width: 0;
+                    margin-top: 0;
+                    margin-bottom: 1.3em;
+                    clear: both;
+                }
+
+                code,
+                pre {
+                    font-family: 'Source Code Pro', monospace;
+                }
+
+                .higlighted {
+                    background-color: rgba(0,0,0,0.05);
+                    padding: 3px;
+                    border-radius: 3px;
+                }
+
+                /* LEFT-MENU
+        ----------------------------------------------------------------------------------------*/
+
+                .left-menu {
+                    position: fixed;
+                    z-index: 3;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    width: 300px;
+                    box-sizing: border-box;
+                    background-color: #f4f5f8;
+                    overflow-x: hidden;
+                    font-size: 18px;
+                }
+
+                    .left-menu .content-infos {
+                        position: relative;
+                        padding: 12px 13.25%;
+                        margin-bottom: 20px;
+                    }
+
+                    .left-menu .info {
+                        position: relative;
+                        font-size: 14px;
+                        margin-top: 5px;
+                        color: #777A7A;
+                    }
+
+                        .left-menu .info b {
+                            font-weight: 500;
+                            color: #034c8f;
+                        }
+
+                .content-logo {
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding: 1.425em 11.5%;
+                    padding-right: 0;
+                }
+
+                    .content-logo img {
+                        display: inline-block;
+                        max-width: 70%;
+                        vertical-align: middle;
+                    }
+
+                    .content-logo span {
+                        display: inline-block;
+                        margin-left: 10px;
+                        vertical-align: middle;
+                        color: #323F4C;
+                        font-size: 1.1em;
+                    }
+
+                .content-menu {
+                    margin: 2em auto 2em;
+                    padding: 0 0 100px;
+                }
+
+                    .content-menu ul {
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        line-height: 28px;
+                    }
+
+                        .content-menu ul li {
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+                            line-height: 0;
+                        }
+
+                            .content-menu ul li:hover,
+                            .content-menu ul li.active {
+                                background-color: #DCDEE9;
+                            }
+
+                                .content-menu ul li:hover a,
+                                .content-menu ul li.active a {
+                                    color: #00a8e3;
+                                }
+
+                @media (hover: none) {
+                    .content-menu ul li:not(.active):hover {
+                        background-color: inherit;
+                    }
+
+                        .content-menu ul li:not(.active):hover a {
+                            color: #777A7A;
+                        }
+                }
+
+                .content-menu ul li a {
+                    padding: 12px 13.25%;
+                    color: #777A7A;
+                    letter-spacing: 0.025em;
+                    line-height: 1.1;
+                    display: block;
+                    text-transform: capitalize;
+                }
+
+                /* CONTENT-PAGE
+        ----------------------------------------------------------------------------------------*/
+
+                .content-page {
+                    position: relative;
+                    box-sizing: border-box;
+                    margin-left: 300px;
+                    z-index: 2;
+                    background-color: #fff;
+                    min-height: 100%;
+                    padding-bottom: 1px;
+                }
+
+                .content-code {
+                    width: 50%;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    background-color: #323f4c;
+                    border-color: #323f4c;
+                }
+
+                .content {
+                    position: relative;
+                    z-index: 30;
+                }
+
+                    .content h1,
+                    .content h2,
+                    .content h3,
+                    .content h4,
+                    .content h5,
+                    .content h6,
+                    .content p,
+                    .content table,
+                    .content aside,
+                    .content dl,
+                    .content ul,
+                    .content ol,
+                    .content .central-overflow-x {
+                        margin-right: 50%;
+                        padding: 0 28px;
+                        box-sizing: border-box;
+                        display: block;
+                        max-width: 680px;
+                    }
+
+                    .content .central-overflow-x {
+                        margin-right: calc(50% + 28px);
+                        margin-left: 28px;
+                        padding: 0;
+                        overflow-y: hidden;
+                        max-width: 100%;
+                        display: block;
+                    }
+
+                    .content p .central-overflow-x {
+                        margin-right: 0;
+                        margin-left: 0;
+                    }
+
+                .break-word {
+                    word-break: break-word;
+                    overflow-wrap: break-word;
+                    word-wrap: break-word;
+                }
+
+                .content ul,
+                .content ol {
+                    padding: 0 44px;
+                }
+
+                .content h2,
+                .content h3,
+                .content h4,
+                .content h5,
+                .content h6 {
+                    font-size: 15px;
+                    margin-top: 2.5em;
+                    margin-bottom: 0.8em;
+                    color: #034c8f;
+                    text-transform: uppercase;
+                }
+
+                .content h2 {
+                    font-size: 1.333em;
+                }
+
+                .content h4 {
+                    color: #00a8e3;
+                    margin-top: 0;
+                    text-transform: none;
+                    font-size: 14px;
+                    margin-bottom: 0.2em;
+                }
+
+                .content-page .content p,
+                .content-page .content pre {
+                    max-width: 680px;
+                }
+
+                .content pre,
+                .content blockquote {
+                    background-color: #323f4c;
+                    border-color: #323f4c;
+                    color: #fff;
+                    padding: 0 28px 2em;
+                    margin: 0;
+                    width: 50%;
+                    float: right;
+                    clear: right;
+                    box-sizing: border-box;
+                }
+
+                    .content pre code, .content pre {
+                        font-size: 12px;
+                        line-height: 1.5;
+                    }
+
+                        .content blockquote,
+                        .content pre,
+                        .content pre code {
+                            padding-top: 0;
+                            margin-top: 0;
+                        }
+
+                            .content pre code {
+                                margin-top: -2em;
+                            }
+
+                .content table {
+                    font-size: 0.825em;
+                    margin-bottom: 1.5em;
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                }
+
+                    .content table tr:last-child {
+                        border-bottom: 1px solid #ccc;
+                    }
+
+                    .content table th {
+                        font-size: 0.925em;
+                        padding: 5px 18px 5px 0;
+                        border-bottom: 1px solid #ccc;
+                        vertical-align: bottom;
+                        text-align: left;
+                        line-height: 1.6;
+                    }
+
+                    .content table td {
+                        padding: 5px 18px 5px 0;
+                        text-align: left;
+                        vertical-align: top;
+                        line-height: 1.6;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 300;
+                        color: #777A7A;
+                    }
+
+
+                /* burger-menu-icon
+        ----------------------------------------------------------------------------------------*/
+                .burger-menu-icon {
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding: 0;
+                    position: absolute;
+                    right: 26px;
+                    top: 26px;
+                    display: none;
+                }
+
+                    .burger-menu-icon .line {
+                        fill: none;
+                        stroke: #000;
+                        stroke-width: 6;
+                        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+                    }
+
+                    .burger-menu-icon .line1 {
+                        stroke-dasharray: 60 207;
+                        stroke-width: 6;
+                    }
+
+                    .burger-menu-icon .line2 {
+                        stroke-dasharray: 60 60;
+                        stroke-width: 6;
+                    }
+
+                    .burger-menu-icon .line3 {
+                        stroke-dasharray: 60 207;
+                        stroke-width: 6;
+                    }
+
+                html.menu-opened .burger-menu-icon .line1 {
+                    stroke-dasharray: 90 207;
+                    stroke-dashoffset: -134;
+                    stroke-width: 6;
+                }
+
+                html.menu-opened .burger-menu-icon .line2 {
+                    stroke-dasharray: 1 60;
+                    stroke-dashoffset: -30;
+                    stroke-width: 6;
+                }
+
+                html.menu-opened .burger-menu-icon .line3 {
+                    stroke-dasharray: 90 207;
+                    stroke-dashoffset: -134;
+                    stroke-width: 6;
+                }
+
+
+                /* ONE CONTENT COLUMN VERSION
+        ----------------------------------------------------------------------------------------*/
+
+                body.one-content-column-version .content h1,
+                body.one-content-column-version .content h2,
+                body.one-content-column-version .content h3,
+                body.one-content-column-version .content h4,
+                body.one-content-column-version .content h5,
+                body.one-content-column-version .content h6,
+                body.one-content-column-version .content p,
+                body.one-content-column-version .content table,
+                body.one-content-column-version .content ul,
+                body.one-content-column-version .content ol,
+                body.one-content-column-version .content aside,
+                body.one-content-column-version .content dl,
+                body.one-content-column-version .content ul,
+                body.one-content-column-version .content ol {
+                    margin-right: 0;
+                    max-width: 100%;
+                }
+
+                body.one-content-column-version .content-page .content p,
+                body.one-content-column-version .content-page .content pre {
+                    max-width: 100%;
+                }
+
+                body.one-content-column-version .content-page {
+                    background-color: #323f4c;
+                }
+
+                body.one-content-column-version .content h1:first-child,
+                body.one-content-column-version .content h2,
+                body.one-content-column-version .content h3,
+                body.one-content-column-version .content h4,
+                body.one-content-column-version .content h5,
+                body.one-content-column-version .content h6 {
+                    color: #59C3C3;
+                }
+
+                body.one-content-column-version p {
+                    color: #D6F0F0;
+                }
+
+                body.one-content-column-version .content table td {
+                    color: #D6F0F0;
+                }
+
+                body.one-content-column-version .content thead {
+                    color: #417179;
+                }
+
+                /* RESPONSIVE
+        ----------------------------------------------------------------------------------------*/
+
+                @media only screen and (max-width:980px) {
+                    .content h1, .content h2, .content h3, .content h4, .content h5, .content h6, .content p, .content table, .content ul, .content ol, .content aside, .content dl, .content ul, .content ol {
+                        margin-right: 0;
+                    }
+
+                    .content .central-overflow-x {
+                        margin: 0;
+                        padding: 0 28px;
+                    }
+
+                    .content-code {
+                        display: none;
+                    }
+
+                    .content pre, .content blockquote {
+                        margin: 20px 0;
+                        padding: 28px;
+                        display: block;
+                        width: auto;
+                        float: none;
+                    }
+
+                        .content pre code {
+                            margin-top: 0;
+                        }
+                }
+
+                @media only screen and (max-width:680px) {
+                    html {
+                        scroll-padding-top: 83px;
+                    }
+
+                        html.menu-opened {
+                            overflow: hidden;
+                        }
+
+                    .left-menu {
+                        position: relative;
+                        width: auto;
+                    }
+
+                        .left-menu .content-menu {
+                            position: fixed;
+                            width: 400px;
+                            max-width: 90vw;
+                            z-index: 3;
+                            top: 0;
+                            bottom: 0;
+                            right: -405px;
+                            left: auto;
+                            background-color: #fff;
+                            margin: 0;
+                            overflow-x: hidden;
+                            padding-top: 83px;
+                            padding-bottom: 20px;
+                        }
+
+                            .left-menu .content-menu ul {
+                                position: relative;
+                            }
+
+                        .left-menu .mobile-menu-closer {
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            z-index: 2;
+                            background-color: rgba(50, 63, 76, .5);
+                            opacity: 0;
+                            visibility: hidden;
+                        }
+
+                    html.menu-opened .left-menu .mobile-menu-closer {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+
+                    html.menu-opened .left-menu .content-menu {
+                        right: 0;
+                    }
+
+                    .left-menu .content-logo {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        z-index: 4;
+                        background-color: #f4f5f8;
+                    }
+
+                    .content-logo .logo {
+                        margin-right: 65px;
+                    }
+
+                    .content-page {
+                        margin-left: 0;
+                        padding-top: 83px;
+                    }
+
+                    .burger-menu-icon {
+                        display: block;
+                    }
+                }
+
+                /* BROWSER AND NON-SEMANTIC STYLING
+        ----------------------------------------------------------------------------------------*/
+
+                .cf:before, .cf:after {
+                    content: "";
+                    display: block;
+                }
+
+                .cf:after {
+                    clear: both;
+                }
+
+                .ie6 .cf {
+                    zoom: 1
+                }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+</head>
+
+<body class="one-content-column-version">
+    <div class="left-menu">
+        <div class="content-logo">
+            <div class="logo">
+               <a href="http://localhost:3000/"> <img src="l3.png" height="32" />
+                <span>OTO Documentation</span></a>
+            </div>
+            <button class="burger-menu-icon" id="button-menu-mobile">
+                <svg width="34" height="34" viewBox="0 0 100 100"><path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path><path class="line line2" d="M 20,50 H 80"></path><path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path></svg>
+            </button>
+        </div>
+        <div class="mobile-menu-closer"></div>
+        <div class="content-menu">
+            <div class="content-infos">
+                <div class="info"><b>Version:</b> 2.0.0</div>
+                <div class="info"><b>Last Updated:</b> 1ST NVBR, 2023</div>
+            </div>
+            <ul>
+                <li class="scroll-to-link active" data-target="content-get-started">
+                    <a>Başlangıç</a>
+                </li>
+                <li class="scroll-to-link" data-target="content-get-characters">
+                    <a>Araçlar</a>
+                </li>
+                <li class="scroll-to-link" data-target="content-errors">
+                    <a>Hatalar</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="content-page">
+        <div class="content">
+            <div class="overflow-hidden content-section" id="content-get-started">
+                <h1>Başlangıç<h1>
+                <p>
+                   Merhaba , öncelikle otomuza size verilen özel token ile giriş yapmanız gerekiyor. aynı zamanda api servislerini de bu token ile açmanız gerekiyor.Bunları nasıl yapılacağını aşağıda anlattım..
+                    Herhangi bir hatada veya isteğiniz olursa bana gelip söylemeniz otomuzu daha iyi yapıcaktır . 
+                    Telegram adresim : <a href="https://t.me/suphi007" target="_blank">@suphi007</a><br/>
+					Boş olması gereken portlar! : 3000,3001,3002,3003,3004,3005,3006,3007.<br/><br/>
+					Hesap Toplama hakkında : <br/>
+					1-)Önerilenlerden Toplama: Yazdığınız veya daha önceden devam eden işlemden kalan kullanıcının , instagram tarafından önerilen hesapları toplamanızı sağlar.
+					<br/>Up uzun zaman çalışırsa ve yazdığınız hesap kısır hesap ise boşu boşuna interneti ve hesabınızı yorabilirsiniz o yüzden tavsiyem 10-12 saat te 1 önerilen hesaplardaki kullanıcı adını değiştirin.<br/>
+					Hesap toplamada en iyisi "Önerilenlerden" dir tek 1 işlemde 40-100 tane hesap bilgisi alabiliyoruz.(Not:Tarama hıznı etkilemez. Tarama ayrı olarak yürütülür.)
+ 					<br/>
+					<br/>
+					2-)Hashtag Toplama: Yazdığınız hashtag'ı instagram üzerinden kontrol edip en yakın zamanda paylaşım yapmış kullanıcıları siz işlemi devam ettirdiğiniz sürece toplamaya devam eder.
+					Hesap toplaması 1 requestte 6-7 olsada asıl önemli olan tarama (yani mail varmı yokmu kontrolü) olduğundan yazdığınız hashtagın kalitesinden kalitesine değişsede daha kolay mail toplama imkanı sunabiliyorlar bazen.
+					<br/><br/>
+					3-)Location Toplama: www.instagram.com a giriniz ve bir konum aratınız konuma tıklayınız çıkan link yapısı şöyle olucaktır => https://www.instagram.com/explore/locations/xxxxxx/KONUMADI/ burdaki xxxxx bizim location id'miz dir.
+					<br/>Location olarak toplama yapmanız sizin scriptinizin kalitesine bağlı olarak daha kolay hesap düşürme imkanı verebilir. Örnek verelim : a ülkesi hem salak hemde refah seviyesi yüksekse (ki böyle bişey olamaz :) )<br/>
+Orayı seçip daha rahat bir şekilde re-sell yapabilirsiniz .
+<br/><br/>
+4-)Genel Toplama: Yenilikçi bir toplama seçeneği olan "Genel Toplama" fonksiyonumuz şöyle işler: Siz bir kelime yazarsınız o kelime yapay zeka (ChatGPT 3.5 TURBO) ile geliştirlir ve daha geniş bir havuz oluşturulur.<br/>
+Tüm bu havuzdaki hespların maillerini ve telefon numaralarını size verir.<br/>
+Bunun güzelliği ise yazdığınız herhangi bir kelimeden sadece maili olan hesaplara erişmesidir yani tamamen yazcağınız kelimeye bağlı olarak tahmini 30-40 adet maili size 1 requestte vericektir.<br/>
+Dezavantajlarından birisi ise bu arkdaşımız otomatik değil her sonuç  geldiğinde ya tekrar basmanız yada kelime değiştirmeniz gerekmektedir.<br/><br/><br/>
+Hesap Basma Hakkında:<br/>
+1-)WP Basıcı: WP Basıcı 2 adet yöntemle oluşuyor. 1. si tekli mesajlar için uygun olan bir server , 2. si ise çoklu mesaj gönderimlerinde işe yaramaktadır.Merak edenler için denendi 160 telefon numarası bastık sorun olmadı.
+<br/><br/>
+2-)Messenger Basıcı: Messenger basıcı için önce messenger hesabı eklemeniz gerekiyor.Messenger ile Instagram arasında bir bilgi alışverişi döndüğünden dolayı Messenger basıcı size biraz yavaş gelebilir fakat arka planda çalıştırabilme imkanı olduğundan sıkıntısız bir şekilde hal edebilirsniz.Taslak içerisinde [suphi] yazdığınız yere username otomatik olarak gelir.<br/>
+<br/>
+3-)DM Basıcı: DM basıcı 2 adet yönetmle oluşuyor. 1. si hedef kişilere mesaj atamnızı sağlayan, 2. si ise dm kutusunda olan kişilere mesaj atmanızı sağlar. Taslak düz olması gerekmektedir yani [suphi] işlemi 2. versiyon için geçersizdir.<br/><br/>
+<br/>
+Hesap Ekleme Hakkında:
+<br/>
+1-)Telegram Botu ekleme: Arkadaşlar bunu henüz geliştirme aşamasındayız.İlerde kendi cihazınızdan , satın almaya imkanı olmayan veya vds bulamayan arkdaşlar için telegram bot hizmeti satabilmeniz için ekliyorum.
+<br/>Webhook bir domain olması lazım.<br/><br/>
+2-)Instagram hesabı ekleme: Açılan ekrana kullanıcı adı ve şifrenizi yazınız ve giriş yap diyin. açılan pencerenin sorunsuz giriş yapmasını sağlayın (eğer otomatik giriş yapmaz ise).
+<br/><br/>
+3-)Messenger hesabı ekleme: Açılan ekrana Facebook bilgilerinizi giriniz.Açılan sayfanın sorunsuz giriş yapmasını sağlayınız (eğer otomatik giriş yapmazsa)<br/><br/>
+
+                </p>
+                <p>
+                    OTO Key için benimle <strong>TELEGRAM </strong>. üzerinden iletişime geçebilirsiniz. Sahte hespalara dikkat ediniz. <a href="mailto:yasin@suphi.org">yasin@suphi.org</a> mail atabilirsiniz.
+                </p>
+            </div>
+            <div class="overflow-hidden content-section" id="content-get-characters">
+                <h2>İşlemler</h2>
+                <p>
+                    Öncelikle yapılan işlem yani örnek veriyorum dm bastınız ve tekrar toplamaya geçtiniz geldiniz dm basma ekranına , Instagram serveri ne olur ne olmaz aç kapa yapınız.<br /><br />
+                </p><h4> API Servislerini Başlatma:</h4> <p>
+                    <br /><br />
+                    Öncelikle en önemli API miz olan api.js başlatmamız gerekiyor.Unutmayınız token kodlarınız güncelleniyor sabit ip kullanmayan arkadaşlar token kodları belli bir saatten sonra kabul olmayacaktır, bundan dolayı yine telegram üzerinden benimle iletişime geçip alabilirsiniz yeni tokeni.<br>
+                    <br />  CMD ile OTO'nun bulunduğu klasöre geliniz ve "backend" klasörüne giriniz (cd backend) ve şu kodu yazınız:
+                    <br /><code class="higlighted break-word">node api.js TokenKodunuz</code><br />
+                    <br />  Bu kod sonucunda API servisimiz başlamış olmalı eğer başlamadıysa token kodunuzda problem olabilir.Diğer API Servisleri OTO dan yöneteiblirsiniz.
+                    <br /> <br />
+                    <br />
+                </p><h4>OTO Başlatma</h4><p>
+                    <br />
+                    <br />	Öncelikle React projesi olduğundan dolayı gerekli kütüphanelerin yüklenmesi gerekiyor . Hangi kütüphanelerin yükleneceğini burayı editleyip paylaşıcam .
+                    <br />CMD ile OTO nun olduğu klasöre geliniz ve şu kodu yazınız
+                    <br /><code class="higlighted break-word">npm start</code>
+                </p>
+                <br />
+                <br />
+                <h4>Webmail ayarı</h4><br />
+                <p>
+                    Phpmyadmin e giriniz (<a href="http://localhost/phpmyadmin" target="_blank">http://localhost/phpmyadmin</a>) Ardından oluşturduğunuz rich adlı database ye giriniz ve "webmail" adlı tabloya giriniz <br />
+                    ardından ekle/insert diyerek gerekli bilgileri doldurunuz. <br />
+                    Bilmeniz gerekenler : 465 portu genellikle secure kısmı true olur , 587 Portu genellikle false olur. Subject kısmı mailin konusunu belirtmenizi ister.(Örneğin Telif yediniz.)
+                </p>
+                <br>
+                <br />
+                <h4>Request Server</h4>
+                <br />
+                <p>
+                    Mail finder ve Mail sender olarak 2 ye ayrılır<br />
+                    Mail finder server a tüm vip üyeler erişebilirken , Mail sender server a sadece Özel üyeler erişebilir. Maalesef Ücretsiz üyelikler bu kategoriye erişimleri bulunmamaktadır.<br />
+                    Peki nedir bu request server ve olayı nedir?<br />
+                    Olayı şudur ki patron.js ve calisan.js den oluşur <br />
+                    Önce Calisan.js çalıştırmanız gerekiyor.İstediğiniz kadar cmd açıp, şu kodu yazınız <br />
+                    <code class="higlighted break-word">node Calisan.js [cookieFile.json]</code><br />
+                    Cookie File dosyanızı şu şekilde oluşturabilirsiniz;
+                    <br />
+                    Hesap ekle > Instagram Acc. > Bilgilerinizi Girin ve ekle ye basın <br />
+                    Ardından oto klasöründeki "backend" Yerine gelin ordaki "Hesaplar" kısmına gelin ve ordaki cookies.json u alıp Request Server\Mail Finder\Hesaplar\ içine koyunuz adı fark etmez. <br />
+                    bu tekrarlayarak farklı dosya isimleri ile copy-paste yapabilirsiniz (1 Adet yetiyor, çok kullanmanız sizin faydanıza).<br />
+                    her cmd de örnek veriyorum <br />
+                    <code class="higlighted break-word">node Calisan.js toplamahesabim0.json</code><br />
+                    <code class="higlighted break-word">node Calisan.js toplamahesabim.json</code><br />
+                    <code class="higlighted break-word">node Calisan.js toplamahesabim3.json</code><br />
+                    Şeklinde çalıştırıdınız diyelim , böyle yaparsanız hesaplarınız çooook zor ban yer.<br />
+                    Ve son olarak.<br />
+                    Patron.js 1 kere açmak zorundasınız fazladan Patron.js açma hiç bişey kazandırmaz., Çalışma kodu;
+                    <br />
+                    <code class="higlighted break-word">npm Patron.js [SaniyedeKacAdetHesapTaransin]</code>
+                    <br /> Yazıp çalıştırabilirsiniz.Bu patron.js saniyede kaç adet belirttiyseniz o kadar emir vericek ve çalışanlar gidip tek tek istek atıp bakıcak.<br />
+                    Milyonlarca veri atma & yazma olayları tamamen bu mantıkla yürür , dev şirketler bu hizmetleri kullanırlar .<br />
+                    Bu hizmet artık sizde!
+
+                </p>
+
+            </div>
+    </div>
+    <!-- Github Corner Ribbon - to remove (Ribbon created with : http://tholman.com/github-corners/ )-->
+    <a href="https://github.com/suphiyasin" class="github-corner" aria-label="View source on Github" title="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="z-index:99999; fill:#70B7FD; color:#fff; position: fixed; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+    <style>
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+        }
+
+        @keyframes octocat-wave {
+            0%, 100% {
+                transform: rotate(0)
+            }
+
+            20%, 60% {
+                transform: rotate(-25deg)
+            }
+
+            40%, 80% {
+                transform: rotate(10deg)
+            }
+        }
+
+        @media (max-width:500px) {
+            .github-corner:hover .octo-arm {
+                animation: none
+            }
+
+            .github-corner .octo-arm {
+                animation: octocat-wave 560ms ease-in-out
+            }
+        }
+
+        @media only screen and (max-width:680px) {
+            .github-corner > svg {
+                right: auto !important;
+                left: 0 !important;
+                transform: rotate(270deg) !important;
+            }
+        }
+    </style>
+    <!-- END Github Corner Ribbon - to remove -->
+    <script>
+
+        var elements = [];
+
+        [].forEach.call(document.querySelectorAll('.scroll-to-link'), function (div) {
+            div.onclick = function (e) {
+                e.preventDefault();
+                var target = this.dataset.target;
+                document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
+                var elems = document.querySelectorAll(".content-menu ul li");
+                [].forEach.call(elems, function (el) {
+                    el.classList.remove("active");
+                });
+                this.classList.add("active");
+                return false;
+            };
+        });
+
+        document.getElementById('button-menu-mobile').onclick = function (e) {
+            e.preventDefault();
+            document.querySelector('html').classList.toggle('menu-opened');
+        }
+        document.querySelector('.left-menu .mobile-menu-closer').onclick = function (e) {
+            e.preventDefault();
+            document.querySelector('html').classList.remove('menu-opened');
+        }
+
+        function debounce(func) {
+            var timer;
+            return function (event) {
+                if (timer) clearTimeout(timer);
+                timer = setTimeout(func, 100, event);
+            };
+        }
+
+        function calculElements() {
+            var totalHeight = 0;
+            elements = [];
+            [].forEach.call(document.querySelectorAll('.content-section'), function (div) {
+                var section = {};
+                section.id = div.id;
+                totalHeight += div.offsetHeight;
+                section.maxHeight = totalHeight - 25;
+                elements.push(section);
+            });
+            onScroll();
+        }
+
+        function onScroll() {
+            var scroll = window.pageYOffset;
+            console.log('scroll', scroll, elements)
+            for (var i = 0; i < elements.length; i++) {
+                var section = elements[i];
+                if (scroll <= section.maxHeight) {
+                    var elems = document.querySelectorAll(".content-menu ul li");
+                    [].forEach.call(elems, function (el) {
+                        el.classList.remove("active");
+                    });
+                    var activeElems = document.querySelectorAll(".content-menu ul li[data-target='" + section.id + "']");
+                    [].forEach.call(activeElems, function (el) {
+                        el.classList.add("active");
+                    });
+                    break;
+                }
+            }
+            if (window.innerHeight + scroll + 5 >= document.body.scrollHeight) { // end of scroll, last element
+                var elems = document.querySelectorAll(".content-menu ul li");
+                [].forEach.call(elems, function (el) {
+                    el.classList.remove("active");
+                });
+                var activeElems = document.querySelectorAll(".content-menu ul li:last-child");
+                [].forEach.call(activeElems, function (el) {
+                    el.classList.add("active");
+                });
+            }
+        }
+
+        calculElements();
+        window.onload = () => {
+            calculElements();
+        };
+        window.addEventListener("resize", debounce(function (e) {
+            e.preventDefault();
+            calculElements();
+        }));
+        window.addEventListener('scroll', function (e) {
+            e.preventDefault();
+            onScroll();
+        });
+    </script>
+</body>
+
+</html>

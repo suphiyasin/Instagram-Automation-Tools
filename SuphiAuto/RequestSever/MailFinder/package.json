@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.6.3",
+    "node-fetch": "^3.3.2"
+  }
+}
