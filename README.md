@@ -25,11 +25,6 @@
 
 
 # Get Key
-Pricing<br/>
-Trial => 1 Day - 3 Day For FREE <br/>
-Daily => 4.90$<br/>
-Weekly => 14.90$<br/>
-Monthly => 29.90$<br/>
 To obtain a monthly license, please contact <a href="https://t.me/suphi007">@suphi007</a>.
 <br>
 
@@ -43,6 +38,7 @@ You can gather tens of thousands of users from one user with the features you ar
 
 - Nodejs
 - React
+- Rabbitmq
 
 ## Using the repo by downloading
 
