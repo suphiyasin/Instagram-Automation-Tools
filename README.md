@@ -90,6 +90,10 @@ CREATE TABLE `webmail` (
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
 
+CREATE TABLE ayar (
+  tikliOnerilen int(11) NOT NULL,
+  id int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
 
 ```
 
