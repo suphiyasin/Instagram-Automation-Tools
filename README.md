@@ -40,6 +40,9 @@ You can gather tens of thousands of users from one user with the features you ar
 - React
 - Rabbitmq
 
+### Install Wiki
+[https://blog.suphi.org/instagram-automation-tools-nasil-kurulur/](https://blog.suphi.org/instagram-automation-tools-nasil-kurulur/)
+
 ## Using the repo by downloading
 
 1. <a href="https://github.com/suphiyasin/Instagram-Automation-Tools/archive/refs/heads/main.zip">This</a> download script
