@@ -44,6 +44,7 @@ You can gather tens of thousands of users from one user with the features you ar
 [https://blog.suphi.org/instagram-automation-tools-nasil-kurulur/](https://blog.suphi.org/instagram-automation-tools-nasil-kurulur/)
 
 ### Alwayas updated
+NOTE: Messneger Sender Disabled !! 
 Allways updated and 7/24 support 100+ clients :)
 Germany Accounts For Sale! :)
 
