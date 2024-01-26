@@ -145,7 +145,6 @@ Sending process
 
 # Weekly Key Area (Suspend)
 ```
-Username => userpanel
 Password =>  Contact me  Telegram @suphi007
 ``` 
 # Screenshots
