@@ -1,0 +1,9 @@
+{
+  "mail": {
+    "host": "mail.xxxx.com",
+    "port": 465,
+    "secure": true,
+    "user": "user@webmail.com",
+    "password": "Password Here"
+  }
+}
