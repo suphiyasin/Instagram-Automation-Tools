@@ -108,6 +108,7 @@ CREATE TABLE ayar (
 # Updates
 With the new update, e-mail sending is done from the config.json file, not from mysql.<br/>
 A few collections have been optimized.
+Coded mail sender with rabbitmq
 
 # How to Use the Panel?
 
