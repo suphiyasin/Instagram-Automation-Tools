@@ -106,9 +106,11 @@ CREATE TABLE ayar (
 ```
 
 # Updates
-With the new update, e-mail sending is done from the config.json file, not from mysql.<br/>
-A few collections have been optimized.
-Coded mail sender with rabbitmq
+Hello, first of all, api.js has been changed.
+The reason is to prevent errors from occurring in a very short time.
+Please everyone needs to find the Instagram mobile bearer token!
+If you do not know how to find it, please log in with the login function via suphiyasin/instagram-api and enter the token given to you.
+Add "Token" to cookies.json: "IGT:2:ey1234567890";
 
 # How to Use the Panel?
 
