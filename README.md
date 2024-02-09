@@ -112,6 +112,8 @@ Please everyone needs to find the Instagram mobile bearer token!
 If you do not know how to find it, please log in with the login function via suphiyasin/instagram-api and enter the token given to you.
 Add "Token" to cookies.json: "IGT:2:ey1234567890";
 
+Coding for TikTok :)
+
 # How to Use the Panel?
 
 ### 1- Data collecting
